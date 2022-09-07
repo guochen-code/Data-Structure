@@ -1,7 +1,7 @@
 import numpy as np
 def stepsize(number,minimum,maximum,stepsize):
-    if number >=400:
-        number = 400
+    if number >= maximum:
+        number = maximum
         return number
     else:
         index_left=np.digitize(number,np.arange(minimum,maximum+stepsize,stepsize))-1
